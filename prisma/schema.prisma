@@ -30,3 +30,11 @@ model Pressure {
   value     Float
   createdAt DateTime @default(now())
 }
+
+model Alert{
+  id        Int      @id @default(autoincrement())
+  value     Float
+  message   String
+  email     String
+  createdAt DateTime @default(now())
+}
