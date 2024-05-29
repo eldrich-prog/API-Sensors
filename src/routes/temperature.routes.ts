@@ -6,8 +6,8 @@ import safeParse from "../middlewares/safeParse.validator";
 const temperatureController = new TemperatureController();
 
 router.get('/temperature', temperatureController.get);
-router.post('/temperature/:value', temperatureController.post);
-router.get('/temperature/latest', temperatureController.getLatest);
+router.post('/temperature/humidity', temperatureController.postSensors);
+router.get('/temperature/ultimate', temperatureController.getLatest);
 
 export default router;
 // Path: src/schemas/temperature.schema.ts

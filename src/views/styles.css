@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000 0%, #434343 100%); /* Fondo degradado */
+    color: #25dabc; /* Color de texto blanco */
+    text-align: center;
+  }
+  
+  .pretty-title {
+    font-size: 3em; /* Tamaño de la fuente */
+    color: #4a90e2; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+    background: linear-gradient(to right, #6200ea, #d53ac8); /* Degradado de fondo */
+    -webkit-background-clip: text; /* Clip de fondo para WebKit */
+    -webkit-text-fill-color: transparent; /* Color de texto transparente para mostrar el fondo */
+    font-weight: bold; /* Negrita */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+    transition: transform 0.3s; /* Transición para la transformación */
+  }
+  
+
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .btn {
+    background-color: #6200ea; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Fuente en negrita */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .btn:hover {
+    background-color: #9500b3; /* Color de fondo al pasar el ratón */
+    transform: translateY(-2px); /* Ligeramente más alto */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra al pasar el ratón */
+  }
+  
+  .btn:active {
+    background-color: #ff0077; /* Color de fondo al hacer clic */
+    transform: translateY(1px); /* Ligeramente más bajo */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); /* Sombra al hacer clic */
+  }
+  
+  #fetch-data-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #json-container {
+    margin-top: 20px;
+    background-color: #7d7a80;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-height: 60vh;
+    overflow-y: auto;
+    word-wrap: break-word;
+  }
+  
+  .json-key {
+    color: rgb(112, 27, 209);
+    font-weight: bold;
+  }
+  
+  .json-value {
+    color: #f8890a;
+  }
+  
+  .json-string {
+    color: #a53279;
+  }
+
+  

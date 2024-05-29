@@ -20,6 +20,28 @@ class TemperatureController extends HttpInterface {
         temperature: newTemperature.value,
         time: newTemperature.createdAt});
     }
+    async postSensors(req: Request, res: Response): Promise<any> {
+        const { temperature, humidity} = req.query;
+        const pressure = "1027 hPa";
+        console.log(temperature, humidity, pressure);
+        const newTem = await prisma.temperature.create({
+            data: {
+                value: parseFloat(temperature as string)
+            }
+        });
+        const newHumidity = await prisma.humidity.create({
+            data: {
+                value: parseFloat(humidity as string)
+            }
+        });
+        const newPressure = await prisma.pressure.create({
+            data: {
+                value: parseFloat(pressure as string)
+            }
+        });
+
+        return res.status(201).json({ message: 'Temperature and Humidity created'});
+    }
 
     async getLatest(req: Request, res: Response): Promise<any> {
         const temperatures = await prisma.temperature.findFirstOrThrow({

@@ -7,7 +7,7 @@ const humidityController = new HumidityController();
 
 router.get('/humidity', humidityController.get);
 router.post('/humidity/:value', humidityController.post);
-router.get('/humidity/latest', humidityController.getLatest);
+router.get('/humidity/ultimate', humidityController.getLatest);
 
 export default router;
 // Path: src/schemas/temperature.schema.ts

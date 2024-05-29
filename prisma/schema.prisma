@@ -24,3 +24,9 @@ model Humidity {
   value     Float
   createdAt DateTime @default(now())
 }
+
+model Pressure {
+  id        Int      @id @default(autoincrement())
+  value     Float
+  createdAt DateTime @default(now())
+}
